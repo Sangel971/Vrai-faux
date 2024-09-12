@@ -1,0 +1,118 @@
+* {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(2, 46, 106);
+}
+
+h3 {
+  margin-bottom: 0;
+  color: rgb(227, 83, 13);
+  font-size: 1.7rem;
+}
+
+h4 {
+  margin-top: 0;
+  color: rgb(2, 46, 106);
+  font-size: 1.5rem;
+}
+.boite {
+  background: rgb(2, 46, 106);
+  margin: 15px 10px;
+}
+.question {
+  color: whitesmoke;
+  padding: 2px;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.bouton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  background: rgb(227, 83, 13);
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.bouton:hover {
+  transform: scale(1.1);
+}
+.reponse {
+  display: none;
+  transition: 0.3s ease-in;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+button.valider {
+  background-color: #003366; /* Bleu foncé utilisé par Foncia */
+  color: white; /* Texte blanc pour contraste */
+  border: 2px solid #003366; /* Bordure de la même couleur que le fond */
+  border-radius: 5px; /* Bordures légèrement arrondies */
+  padding: 10px 20px; /* Espacement interne pour un bouton équilibré */
+  font-size: 16px; /* Taille de texte lisible */
+  font-weight: bold; /* Texte en gras pour le rendre visible */
+  cursor: pointer; /* Changement de curseur au survol */
+  transition: background-color 0.3s, border-color 0.3s; /* Animation douce */
+}
+
+button.valider:hover {
+  background-color: #ff6600; /* Couleur orange de Foncia au survol */
+  border-color: #ff6600; /* Bordure orange au survol */
+}
+button.valider:active {
+  background-color: #00264d; /* Version plus foncée du bleu lors du clic */
+  border-color: #00264d;
+}
+
+button.valider:disabled {
+  background-color: #cccccc; /* Grisé lorsqu'il est désactivé */
+  border-color: #cccccc;
+  cursor: not-allowed; /* Indique qu'il est non cliquable */
+}
+
+/* Style pour la zone des notes */
+#note {
+  background-color: #ffffff; /* Fond blanc */
+  border: 2px solid #003366; /* Bordure bleu foncé inspirée de Foncia */
+  border-radius: 8px; /* Bords légèrement arrondis */
+  padding: 20px; /* Espacement interne pour l'aération */
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 110px; /* Largeur maximale pour ne pas être trop large */
+  margin: 20px auto; /* Centré avec marge supérieure et inférieure */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner de la profondeur */
+  text-align: center; /* Texte centré */
+  font-size: 18px; /* Taille de texte lisible */
+  font-weight: bold; /* Texte en gras pour visibilité */
+  color: #003366; /* Texte en bleu foncé */
+}
+
+/* Optionnel : ajouter des effets lorsque les notes apparaissent */
+#note.show {
+  animation: fadeIn 0.5s ease-in-out; /* Animation d'apparition douce */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Départ de l'animation avec opacité nulle */
+  }
+  to {
+    opacity: 1; /* Fin de l'animation avec opacité pleine */
+  }
+}
