@@ -43,6 +43,7 @@ mauvais.forEach((mauvais) => {
 });
 
 valider.addEventListener("click", () => {
+  note.classList.add('show');
   note.textContent = point + " sur 19";
 });
-console.log(point);
+
