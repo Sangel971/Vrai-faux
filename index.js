@@ -44,6 +44,6 @@ mauvais.forEach((mauvais) => {
 
 valider.addEventListener("click", () => {
   note.classList.add("show");
-  note.textContent = point + " sur 19";
+  note.textContent = point + " sur 20";
 });
 
